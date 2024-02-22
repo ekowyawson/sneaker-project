@@ -5,7 +5,7 @@ from .permissions import IsOwnerOrReadOnly
 
 class SneakerList(ListCreateAPIView):
     # Anything that inherits from ListAPI View is going to need 2 things.
-    # What is the collection of things, aka the queryset
+    # What is the collection of sneakers, aka the queryset
     queryset = Sneaker.objects.all()
 
     #serializing
