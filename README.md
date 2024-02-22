@@ -1,4 +1,4 @@
-# LAB - Class 31
+# LAB - Class 32
 
 ## Project: Sneakers Project
 
@@ -11,7 +11,7 @@
 
 ### Overview
 
-In this iteration, we will rebuild a custom version of Things API demo project from scratch called Sneaker API.
+In this iteration, we will merge the functionalities of the previous project with this current one. We are customizing the project to use different application features/models than what was used in demos.
 
 ### Links and Resources
 
@@ -21,12 +21,26 @@ In this iteration, we will rebuild a custom version of Things API demo project f
 
 ### Feature Tasks and Requirements
 
-- [x] Update Dockerfile and docker-compose.yml if needed.
+- [x] Make your site a DRF powered API as you did in previous lab.
+- [x] Adjust project’s permissions so that only authenticated user’s have access to API.
+- [x] Add a custom permission so that only appropriate users can update or delete it.
+- [x] Add ability to switch user’s directly from browsable API.
+
+#### Feature: Docker
+
+- [x] Create Dockerfile based off python:3.10-slim
+- [x] Create docker-compose.yml to run Django app as a web service.
+- [x] Enter docker compose up --build to start your site.
+- [x] Add postgres as a service
+- [x] Go to browsable api and confirm site properly restricts users based on their permissions.
 
 ### Stretch Goals
 
-- [ ] Research using a production server vs. the built in development server.
-- [ ] Research using postgres instead of sqlite as database.
+- [x] Research using a production server vs. the built in development server.
+- [x] Research using postgres instead of sqlite as database.
+- [ ] Try different permission levels, including custom ones.
+- [x] Figure out how to directly access postgres running inside container. Hint: it will take research.
+- [ ] Add a volume to persist data when container is shut down.
 
 ### Setup
 
